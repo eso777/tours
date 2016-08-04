@@ -58,11 +58,12 @@ class LocationsCtrl extends Controller {
 			return response()->json(['status' => '400','message'=>'missing country_id parameter'],400);
 		}
 		$countries = Countries::find($bag->country_id);
-		$cites = Cities::where('country_id',$bag->country_id)->get();
+		$cites     = Cities::where('country_id',$bag->country_id)->get();
 		if($cites->count() == 0)
 		{
 			return response()->json(['status' => '400','message'=>'No records to show'],400);
 		}
+		
 		$data = [];
 		$i = 0;
 		foreach ($cites as $city) {
