@@ -13,6 +13,7 @@ return array(
     'CreateCarsOffersTable' => $baseDir . '/database/migrations/2016_08_03_091737_create_cars_offers_table.php',
     'CreateCitiesTable' => $baseDir . '/database/migrations/2016_07_30_015927_create_cities_table.php',
     'CreateCountriesTable' => $baseDir . '/database/migrations/2016_07_30_015909_create_countries_table.php',
+    'CreateHotelsReservationsTable' => $baseDir . '/database/migrations/2016_08_06_075646_create_hotels_reservations_table.php',
     'CreateHotelsTable' => $baseDir . '/database/migrations/2016_07_19_130348_create_hotels_table.php',
     'CreateOffersTable' => $baseDir . '/database/migrations/2016_07_20_130600_create_offers_table.php',
     'CreateSettingsTable' => $baseDir . '/database/migrations/2016_06_26_063535_create_settings_table.php',

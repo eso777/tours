@@ -359,6 +359,7 @@ class ComposerStaticInit265e8eccb5c018a1b09c7ab71f66aff6
         'CreateCarsOffersTable' => __DIR__ . '/../..' . '/database/migrations/2016_08_03_091737_create_cars_offers_table.php',
         'CreateCitiesTable' => __DIR__ . '/../..' . '/database/migrations/2016_07_30_015927_create_cities_table.php',
         'CreateCountriesTable' => __DIR__ . '/../..' . '/database/migrations/2016_07_30_015909_create_countries_table.php',
+        'CreateHotelsReservationsTable' => __DIR__ . '/../..' . '/database/migrations/2016_08_06_075646_create_hotels_reservations_table.php',
         'CreateHotelsTable' => __DIR__ . '/../..' . '/database/migrations/2016_07_19_130348_create_hotels_table.php',
         'CreateOffersTable' => __DIR__ . '/../..' . '/database/migrations/2016_07_20_130600_create_offers_table.php',
         'CreateSettingsTable' => __DIR__ . '/../..' . '/database/migrations/2016_06_26_063535_create_settings_table.php',

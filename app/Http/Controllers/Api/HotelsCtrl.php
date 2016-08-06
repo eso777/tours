@@ -4,7 +4,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
-use App\hotels_Reservation;
+use App\HotelsReservations;
 use App\ApiSettings;
 use App\Hotel;
 use App\Countries;
@@ -47,7 +47,6 @@ class HotelsCtrl extends Controller {
 			$data[$i]['desc'] 	 	    = $hotel['name_'.$bag->lang];
 			$data[$i]['country'] 	    = $countries->find($hotel['country_id'])['name_'.$bag->lang];
 			$data[$i]['city']    	    = $cities->find($hotel['city_id'])['name_'.$bag->lang];
- 
 			$data[$i]['price']   	    = $hotel['price'];
 			$data[$i]['num_of_per']     = $hotel['num_of_per'];
 			$data[$i]['stars']          = $hotel['stars'];
@@ -180,9 +179,9 @@ class HotelsCtrl extends Controller {
 		{
 			return response()->json(['status' => '400','message'=>'missing date_to parameter'],400);
 		}
-		$bag->merge(['user_id'=>Auth::client()->get()->id]);
 		
-		hotels_Reservation::create($bag->all());
+		$bag->merge(['user_id'=>Auth::client()->get()->id]);
+		HotelsReservations::create($bag->all());
 		return response()->json(['status'=>'200' , 'msg'=>'Reservation Successfully'] , 200);
 	}
 }// end Class 
