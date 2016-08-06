@@ -31,7 +31,7 @@ Route::group(['prefix'=>'api'],function(){
 
 	/* Start Cars Api Route */
 		Route::get('cars/brand','Api\BrandCtrl@getBrand'); 
-		Route::get('cars/search','Api\CarsCtrl@getCars'); 
+		Route::get('cars/offers','Api\OffersCtrl@searchOffers'); 
 		Route::get('cars/number','Api\CarsCtrl@nums'); 
 	/* End Cars Api Route */
 	
