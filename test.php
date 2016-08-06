@@ -1,5 +1,3 @@
 <?
 phpinfo();
-eslam
 ?>
-ahmed

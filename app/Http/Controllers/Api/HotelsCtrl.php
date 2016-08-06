@@ -174,11 +174,11 @@ class HotelsCtrl extends Controller {
 		}
 		if(!$bag->has('date_from'))
 		{
-			return response()->json(['status' => '400','message'=>'missing hotel_id parameter'],400);
+			return response()->json(['status' => '400','message'=>'missing date_from parameter'],400);
 		}
 		if(!$bag->has('date_to'))
 		{
-			return response()->json(['status' => '400','message'=>'missing hotel_id parameter'],400);
+			return response()->json(['status' => '400','message'=>'missing date_to parameter'],400);
 		}
 		$bag->merge(['user_id'=>Auth::client()->get()->id]);
 		
