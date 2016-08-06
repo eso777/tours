@@ -15,6 +15,10 @@ class CreateCarsOffersTable extends Migration {
 		Schema::create('cars_offers', function(Blueprint $table)
 		{
 			$table->increments('id');
+			$table->string('offer_name_ar');
+			$table->string('offer_name_en');
+			$table->text('offer_desc_ar');
+			$table->text('offer_desc_en');
 			$table->integer('country_id');
 			$table->integer('city_id');
 			$table->integer('brand_id');
